@@ -1,15 +1,14 @@
 let calculatorDisplay = document.getElementById('calculatorDisplay')
 
-let total = {
-  start: 0
-}
+let total = 0
 
 function drawDisplay(){
-let template = `${total.start}`
+let template = `${total}`
 calculatorDisplay.innerText = template
+drawDisplay();
 } 
-drawDisplay()
 
-function addNumber(){
-
+function clickNumber(digit){
+  total = digit
+  drawDisplay();
 }
