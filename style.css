@@ -1,0 +1,25 @@
+#calculatorDisplay {
+  background-color: black;
+  height: 7vh;
+  width: 40vw;
+  z-index: 2;
+  position: absolute;
+  margin-left: 25vw;
+  margin-top: 10vh;
+}
+
+.calculatorKeys {
+  background-color: rgba(12, 5, 5, 0.568);
+  height: 64vh;
+  width: 40vw;
+  z-index: 2;
+  position: absolute;
+  margin-left: 25vw;
+  margin-top: 17vh;
+}
+
+.keys {
+  height: 5vh;
+  width: 2vw;
+  margin: 2vh;
+}
