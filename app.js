@@ -11,13 +11,24 @@ calculatorDisplay.innerText = template
 } 
 drawDisplay();
 
-//NOTE 2 draw displays? one for begining one end/strings,nums?
-
-function add(firstNum) {
-  let addition = firstNum += 2
-  total.num = addition 
+function add(number) {
+  let firstNumber = number 
+  let secondNumber = 0
+  total.num = 0 
+  total.string = ""
+  let value = firstNumber + 1
+  total.num = value
   drawDisplay()
 }
+
+//take first number, save as new variable (done)
+//clear display (done)
+//take second number
+//add both numbers 
+
+//need equals function 
+
+//clickSecondNumber
 
 
 function clickNumber(digit){
