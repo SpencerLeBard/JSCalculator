@@ -16,7 +16,9 @@ function add(number) {
   let secondNumber = 0
   total.num = 0 
   total.string = ""
-  let value = firstNumber + 1
+  secondNumber = total.num
+  debugger
+  let value = firstNumber + secondNumber
   total.num = value
   drawDisplay()
 }
