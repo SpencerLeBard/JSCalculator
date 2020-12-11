@@ -32,6 +32,7 @@ function add(number) {
 
 //clickSecondNumber
 
+//array of numbers instead of string
 
 function clickNumber(digit){
   total.string = total.string += digit
