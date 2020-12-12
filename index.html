@@ -10,20 +10,21 @@
 <main>
   <div id="calculatorDisplay" class="text-light">0</div>
   <div class="calculatorKeys">
-    <button onclick="clickNumber(1)"><div class="key1 keys" data-action>1</div></button>
-    <button onclick="clickNumber(2)"><div class="key2 keys">2</div></button>
-    <button onclick="clickNumber(3)"><div class="key3 keys">3</div></button>
-    <button onclick="clickNumber(4)"><div class="key4 keys">4</div></button>
-    <button onclick="clickNumber(5)"><div class="key5 keys">5</div></button>
-    <button onclick="clickNumber(6)"><div class="key6 keys">6</div></button>
-    <button onclick="clickNumber(7)"><div class="key7 keys">7</div></button>
-    <button onclick="clickNumber(8)"><div class="key8 keys">8</div></button>
-    <button onclick="clickNumber(9)"><div class="key9 keys">9</div></button>
-    <button onclick="add(total.num)"><div class="keyplus keys" data-action="add">+</div></button>
+    <button onclick="calculator(1)"><div class="key1 keys" data-action>1</div></button>
+    <button onclick="calculator(2)"><div class="key2 keys">2</div></button>
+    <button onclick="calculator(3)"><div class="key3 keys">3</div></button>
+    <button onclick="calculator(4)"><div class="key4 keys">4</div></button>
+    <button onclick="calculator(5)"><div class="key5 keys">5</div></button>
+    <button onclick="calculator(6)"><div class="key6 keys">6</div></button>
+    <button onclick="calculator(7)"><div class="key7 keys">7</div></button>
+    <button onclick="calculator(8)"><div class="key8 keys">8</div></button>
+    <button onclick="calculator(9)"><div class="key9 keys">9</div></button>
+    <button onclick="add()"><div class="keyplus keys" data-action="add">+</div></button>
     <button onclick="subtract()"><div class="keyminus keys" data-action="subtract">-</div></button>
     <button onclick="multiply()"><div class="keymultiply keys" data-action="multiply">x</div></button>
     <button onclick="divide()"><div class="keydivide keys" data-action="divide">/</div></button>
     <button onclick="equals()"><div class="keyequal keys" data-action="equals">=</div></button>
+    <button onclick="clearDisplay()"><div class="keyclear keys" data-action="clear">A/C</div></button>
   </div>
 </main>
 <script src="app.js"></script>

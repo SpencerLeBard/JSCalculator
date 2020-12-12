@@ -1,9 +1,11 @@
 let calculatorDisplay = document.getElementById('calculatorDisplay')
 
 let total = {
-  string: "",
   num: 0
 }
+
+let numbersArray = []
+
 
 function drawDisplay(){
 let template = `${total.num}`
@@ -11,31 +13,25 @@ calculatorDisplay.innerText = template
 } 
 drawDisplay();
 
-function add(number) {
-  let firstNumber = number 
-  let secondNumber = 0
-  total.num = 0 
-  total.string = ""
-  secondNumber = total.num
-  debugger
-  let value = firstNumber + secondNumber
-  total.num = value
+function clearDisplay(){
+numbersArray = []
+total.num = 0
+console.log(numbersArray);
+drawDisplay()
+}
+
+
+function calculator(number){
+  numbersArray.push(number)
+  total.num = numbersArray.join("")
+  console.log(numbersArray);
   drawDisplay()
 }
 
-//take first number, save as new variable (done)
-//clear display (done)
-//take second number
-//add both numbers 
-
-//need equals function 
-
-//clickSecondNumber
-
-//array of numbers instead of string
-
-function clickNumber(digit){
-  total.string = total.string += digit
-  total.num = Number.parseInt(total.string)
-  drawDisplay();
+function add(){
+  let additionFinal = 0 
+  additionFinal = numbersArray[0] + numbersArray[1] 
+  total.num = additionFinal
+  drawDisplay()
 }
+
