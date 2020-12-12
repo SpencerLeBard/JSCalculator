@@ -1,37 +1,37 @@
 let calculatorDisplay = document.getElementById('calculatorDisplay')
 
-let total = {
-  num: 0
-}
-
+let total = 0
 let numbersArray = []
 
-
 function drawDisplay(){
-let template = `${total.num}`
+let template = `${total}`
 calculatorDisplay.innerText = template
 } 
 drawDisplay();
 
+
 function clearDisplay(){
 numbersArray = []
-total.num = 0
+total = 0
 console.log(numbersArray);
 drawDisplay()
 }
 
 
+
 function calculator(number){
   numbersArray.push(number)
-  total.num = numbersArray.join("")
-  console.log(numbersArray);
+  total = numbersArray.join("")
   drawDisplay()
 }
 
+
+let addNum = 0
 function add(){
-  let additionFinal = 0 
-  additionFinal = numbersArray[0] + numbersArray[1] 
-  total.num = additionFinal
-  drawDisplay()
+let addNum = Number(numbersArray.join(''))
+numbersArray = []
+console.log(addNum);
+drawDisplay()
 }
+
 
