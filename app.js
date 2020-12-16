@@ -35,3 +35,10 @@ drawDisplay()
 }
 
 
+//NOTE draw to screen
+//1.) div with ID in HTML
+//2.) in JS file have let 'display' = document.getElementById('display')
+//3.) function drawDisplay(){
+// let template = `${display}`
+//display.innertext = template
+//drawDisplay();

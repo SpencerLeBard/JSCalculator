@@ -10,7 +10,7 @@
 
 .calculatorKeys {
   background-color: rgba(12, 5, 5, 0.568);
-  height: 64vh;
+  height: 40vh;
   width: 40vw;
   z-index: 2;
   position: absolute;
