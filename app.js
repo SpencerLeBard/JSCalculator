@@ -2,6 +2,8 @@ let calculatorDisplay = document.getElementById('calculatorDisplay')
 
 let total = 0
 let numbersArray = []
+firstNum = 0
+activeNumber = 0
 
 function drawDisplay(){
 let template = `${total}`
@@ -13,10 +15,8 @@ drawDisplay();
 function clearDisplay(){
 numbersArray = []
 total = 0
-console.log(numbersArray);
 drawDisplay()
 }
-
 
 
 function calculator(number){
@@ -26,19 +26,36 @@ function calculator(number){
 }
 
 
-let addNum = 0
 function add(){
-let addNum = Number(numbersArray.join(''))
-numbersArray = []
-console.log(addNum);
+  firstNum = Number(numbersArray.join(''))
+  numbersArray = []
+  // console.log(firstNum);
+  // console.log(numbersArray);
+  drawDisplay()
+}
+
+function equals(){
+let secondNum = Number(numbersArray.join(''))
+// debugger
+activeNumber = firstNum + secondNum 
+total = activeNumber
 drawDisplay()
 }
 
 
 //NOTE draw to screen
-//1.) div with ID in HTML
+//1.) div with Id in HTML
 //2.) in JS file have let 'display' = document.getElementById('display')
 //3.) function drawDisplay(){
 // let template = `${display}`
 //display.innertext = template
 //drawDisplay();
+
+
+//NOTE while loop once you press any number 
+//if activeNum not set, wait to set active 
+//convert from string to number 
+
+//NOTE
+//use switches for + - etc
+//onlick passes string instead of number 
