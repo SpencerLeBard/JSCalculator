@@ -37,7 +37,8 @@ function add(){
 function equals(){
 let secondNum = Number(numbersArray.join(''))
 // debugger
-activeNumber = firstNum + secondNum 
+activeNumber = firstNum + secondNum
+//NOTE take it parameter in equals(x), use switch cases to add/sub/multiply/divide
 total = activeNumber
 drawDisplay()
 }
@@ -59,3 +60,4 @@ drawDisplay()
 //NOTE
 //use switches for + - etc
 //onlick passes string instead of number 
+//global variable operation any symbol clicked
