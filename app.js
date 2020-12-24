@@ -34,6 +34,12 @@ function add(){
   drawDisplay()
 }
 
+function operation(operator){
+  
+}
+
+//
+
 function equals(){
 let secondNum = Number(numbersArray.join(''))
 // debugger
