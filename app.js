@@ -29,25 +29,33 @@ function calculator(number){
 function add(){
   firstNum = Number(numbersArray.join(''))
   numbersArray = []
-  // console.log(firstNum);
-  // console.log(numbersArray);
   drawDisplay()
 }
 
-function operation(operator){
-  
-}
+// function operation(){
+//   switch(x){
+//     case 
+//   }
+// }
 
-//
 
 function equals(){
 let secondNum = Number(numbersArray.join(''))
-// debugger
 activeNumber = firstNum + secondNum
 //NOTE take it parameter in equals(x), use switch cases to add/sub/multiply/divide
 total = activeNumber
 drawDisplay()
 }
+
+
+
+//NOTE set active number function 
+
+//NOTE
+//use switches for + - etc
+//onclick passes string instead of number 
+//global variable operation any symbol clicked
+
 
 
 //NOTE draw to screen
@@ -57,13 +65,3 @@ drawDisplay()
 // let template = `${display}`
 //display.innertext = template
 //drawDisplay();
-
-
-//NOTE while loop once you press any number 
-//if activeNum not set, wait to set active 
-//convert from string to number 
-
-//NOTE
-//use switches for + - etc
-//onlick passes string instead of number 
-//global variable operation any symbol clicked
