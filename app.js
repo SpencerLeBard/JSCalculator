@@ -8,7 +8,7 @@ activeNumber = 0
 function drawDisplay(){
 let template = `${total}`
 calculatorDisplay.innerText = template
-} 
+}
 drawDisplay();
 
 
